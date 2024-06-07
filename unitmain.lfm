@@ -1,0 +1,74 @@
+object FormMain: TFormMain
+  Left = 731
+  Height = 396
+  Top = 280
+  Width = 402
+  BorderStyle = bsDialog
+  Caption = 'Microsoft Windows 95 Setup'
+  ClientHeight = 396
+  ClientWidth = 402
+  DesignTimePPI = 120
+  OnClose = FormClose
+  LCLVersion = '3.2.0.0'
+  object ButtonOK: TButton
+    Left = 80
+    Height = 31
+    Top = 328
+    Width = 94
+    Caption = 'OK'
+    TabOrder = 0
+    OnClick = ButtonOKClick
+  end
+  object ButtonExit: TButton
+    Left = 212
+    Height = 31
+    Top = 328
+    Width = 94
+    Caption = 'Exit'
+    TabOrder = 1
+    OnClick = ButtonExitClick
+  end
+  object LabelMain: TLabel
+    Left = 56
+    Height = 80
+    Top = 64
+    Width = 295
+    Caption = 'Locate your 11-digit "CD Key" number and'#13#10'enter it int the space below. You can find this'#13#10'number on the sticker on the back of your'#13#10'CD case.'
+    WordWrap = True
+  end
+  object GroupBoxMain: TGroupBox
+    Left = 56
+    Height = 88
+    Top = 216
+    Width = 250
+    Caption = 'CD Key:'
+    ClientHeight = 63
+    ClientWidth = 246
+    ParentBackground = False
+    TabOrder = 2
+    object SiteNumber: TEdit
+      Left = 16
+      Height = 28
+      Top = 8
+      Width = 64
+      MaxLength = 3
+      TabOrder = 0
+    end
+    object ProductKey: TEdit
+      Left = 104
+      Height = 28
+      Top = 8
+      Width = 100
+      MaxLength = 7
+      NumbersOnly = True
+      TabOrder = 1
+    end
+    object LabelDash: TLabel
+      Left = 88
+      Height = 20
+      Top = 8
+      Width = 6
+      Caption = '-'
+    end
+  end
+end
